@@ -17,7 +17,7 @@ public class FakeApiService implements ApiService {
         // TODO: A modifier
         return users;
         //au lieu de return null (generant NullPointerException):
-        // resolution partielle du test de getUsersWithSuccess() (@link UserRepositoryTest)
+        // ---> resolution partielle du test de getUsersWithSuccess() (@link UserRepositoryTest)
     }
 
     /**
@@ -28,6 +28,7 @@ public class FakeApiService implements ApiService {
     public void generateRandomUser() {
         // TODO: A modifier
         users.add(User.random());//ajoute un utilisateur a la liste via la methode random()
+        // ---> resolution partielle du test de generateRandomUserWithSuccess() (@link UserRepositoryTest)
     }
 
     /**
@@ -36,5 +37,8 @@ public class FakeApiService implements ApiService {
     @Override
     public void deleteUser(User user) {
         // TODO: A modifier
+        users.remove(user);
+        //efface un utilisateur a la liste via la methode remove()
+        // ---> resolution partielle du test de deleteUserWithSuccess() (@link UserRepositoryTest)
     }
 }

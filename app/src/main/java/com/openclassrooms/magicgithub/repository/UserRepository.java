@@ -23,9 +23,15 @@ public class UserRepository {
     public void generateRandomUser() {
         // TODO: A modifier
         apiService.generateRandomUser();
+        //utilisation de l'interface apiService pour utiliser le generateRandomUser()
+        // resolution partielle du test de generateRandomUserWithSuccess() (@link UserRepositoryTest)
+
     }
 
     public void deleteUser(User user) {
         // TODO: A modifier
+        apiService.deleteUser(user);
+        //utilisation de l'interface apiService pour effacer un utiisateur a l'aide de la methodde deleteUser()
+        // resolution partielle du test de deleteUserWithSuccess()(@link UserRepositoryTest)
     }
 }
