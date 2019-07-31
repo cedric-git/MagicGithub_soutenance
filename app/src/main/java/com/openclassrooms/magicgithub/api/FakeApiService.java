@@ -15,7 +15,9 @@ public class FakeApiService implements ApiService {
     @Override
     public List<User> getUsers() {
         // TODO: A modifier
-        return null;
+        return users;
+        //au lieu de return null (generant NullPointerException):
+        // resolution partielle du test de getUsersWithSuccess() (@link UserRepositoryTest)
     }
 
     /**

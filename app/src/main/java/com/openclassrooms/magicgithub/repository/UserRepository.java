@@ -15,7 +15,9 @@ public class UserRepository {
 
     public List<User> getUsers() {
         // TODO: A modifier
-        return null;
+        return apiService.getUsers();
+        //utilisation de l'interface apiService pour retourner le getUsers
+        // resolution partielle du test de getUsersWithSuccess() (@link UserRepositoryTest)
     }
 
     public void generateRandomUser() {
